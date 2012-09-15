@@ -1,0 +1,7 @@
+Simple PCB to allow an MBED NXP LPC1768 ARM development board
+to be plugged into a Sanguinololu in place of the ATMEGA chip.  
+It's single-sided to make for easy manufacture.
+
+Design: Adrian
+15 September 2012
+Licence: GPL
