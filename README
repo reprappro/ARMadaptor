@@ -1,6 +1,39 @@
 Simple PCB to allow an MBED NXP LPC1768 ARM development board
 to be plugged into a Sanguinololu in place of the ATMEGA chip.  
-It's single-sided to make for easy manufacture.
+It's single-sided to make for easy manufacture.  You will see
+thet there are a few tracks on the back of the board - they all
+run between vias, and so are intended to be replaced with wire 
+jumpers.
+
+The board routes the Sanguinololu 5V signal to the MBED's VIN
+so the MBED USB is not needed to power it.
+
+There is a micro-SD holder as well.
+
+The MBED pinouts are:
+
+ 5    X Step
+14    Y Step
+24    Z Step
+22    E Step
+ 9    X Dir
+15    Y Dir
+23    Z Dir
+21    E dir
+27    X, Y & E enable
+20    Z enable
+ 6    X Stop
+ 7    Y Stop
+ 8    Z Stop
+25    Hotbed
+26    Hotend
+17    Bed temp
+16    Hotend Temp
+10    SD Enable
+13    SD Clock
+12    SD Data Out
+11    SD Data In
+
 
 Design: Adrian
 15 September 2012
