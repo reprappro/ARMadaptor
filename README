@@ -6,6 +6,8 @@ Licence: GPL
 
 Design: Adrian
 
+Status: Pre-alpha - not yet made and tested.
+
 
 Simple PCB to allow an MBED NXP LPC1768 ARM development board
 to be plugged into a Sanguinololu in place of the ATMEGA chip.  
