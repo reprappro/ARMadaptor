@@ -1,6 +1,6 @@
 RepRapPro Ltd
 
-ARM Sanguinololu Adaptor
+Arduino DUE Sanguinololu Adaptor
 
 Licence: GPL
 
@@ -8,44 +8,33 @@ Design: Adrian
 
 Status: Pre-alpha - not yet made and tested.
 
+Thanks to MAL's Adventures in Electronics Blog at 
 
-Simple PCB to allow an MBED NXP LPC1768 ARM development board
-to be plugged into a Sanguinololu in place of the ATMEGA chip.  
-It's single-sided to make for easy manufacture.  You will see
-that there are a few tracks on the back of the board (blue) - 
-they all run between vias, and so are intended to be replaced 
-with wire jumpers.
+http://circuitfun.wordpress.com/2012/01/02/arduino-mega-shield-template-in-eagle-improved/
 
-The board routes the Sanguinololu 5V signal to the MBED's VIN
-so the MBED USB is not needed to power it.
+for the Arduino sield blank design.
 
-There is a micro-SD holder as well.
+Simple PCBs to allow an Arduino DUE to be plugged into a Sanguinololu 
+in place of its ATMEGA chip.  One is a shield for the Arduino that
+has a pin header for a 20-way ribbon cable.  The other is a PCB that just
+has a header for the other end of the ribbon connected to a set of pins that 
+pretend to be the Sanguinololu's ATMEGA chip.  
 
-The MBED pinouts are:
 
- 5    X Step
-14    Y Step
-24    Z Step
-22    E Step
- 9    X Dir
-15    Y Dir
-23    Z Dir
-21    E dir
-27    X, Y & E enable
-20    Z enable
- 6    X Stop
- 7    Y Stop
- 8    Z Stop
-25    Hotbed
-26    Hotend
-17    Bed temp
-16    Hotend Temp
-10    SD Enable
-13    SD Clock
-12    SD Data Out
-11    SD Data In
+The DUE pinouts are:
+
+{X, Y, Z, [E]}
+{Bed, Hot end}
+-1 = not used
+
+STEP_PINS {54, 60, 46, 26}
+DIRECTION_PINS {55, 61, 48, 28}
+ENABLE_PINS {38, -1, 62, -1}
+STOP_PINS {3, 14, 17}
+TEMP_SENSE_PINS {10, 9}  // Analogue pin numbers
+HEAT_ON_PINS {8, 9}
 
 
 Adrian
-15 September 2012
+23 January 2013
 
