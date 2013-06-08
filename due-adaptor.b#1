@@ -166,10 +166,6 @@
 <text x="67.31" y="-2.54" size="1.016" layer="20" rot="R90">10</text>
 <text x="69.85" y="-2.54" size="1.016" layer="20" rot="R90">11</text>
 <text x="72.39" y="-2.54" size="1.016" layer="20" rot="R90">12</text>
-<text x="80.01" y="6.35" size="1.27" layer="48" rot="R90">Licence: GPL</text>
-<text x="77.47" y="6.35" size="1.4224" layer="48" rot="R90">Arduino Due RepRap Interface Shield</text>
-<text x="80.01" y="34.925" size="1.4224" layer="48" rot="R90">reprappro.com</text>
-<text x="62.865" y="15.24" size="1.4224" layer="48" rot="R90">Design: Adrian</text>
 </plain>
 <libraries>
 <library name="pinhead">
